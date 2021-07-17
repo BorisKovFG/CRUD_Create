@@ -3,7 +3,7 @@
         <label>
             Name:
             <input type="text" placeholder="Add name of new school" name="school[name]"
-                   value="<?php htmlspecialchars($schoolData['name'] ?? ''); ?>">
+                   value="<?= htmlspecialchars($schoolData['name'] ?? ''); ?>">
         </label>
         <?php if(isset($errors['name'])): ?>
         <div><?= $errors['name'] ?></div>
